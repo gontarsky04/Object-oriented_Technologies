@@ -85,6 +85,7 @@ public class Student {
         String sql = "SELECT course_id, grade FROM grade WHERE student_id = ?";
         Object[] args = { this.id };
 
+        Map<Integer, java.util.List<Float>> courseGrades = new java.util.HashMap<>();
         Map<Course, Float> report = new java.util.HashMap<>();
 
         try (ResultSet rs = QueryExecutor.read(sql, args)) {
@@ -92,9 +93,21 @@ public class Student {
                 int courseId = rs.getInt("course_id");
                 float grade = rs.getFloat("grade");
 
-                Optional<Course> courseOpt = Course.findById(courseId);
-                courseOpt.ifPresent(course -> report.put(course, grade));
+                courseGrades.computeIfAbsent(courseId, k -> new java.util.ArrayList<>()).add(grade);
             }
+
+            for (Map.Entry<Integer, java.util.List<Float>> entry : courseGrades.entrySet()) {
+                Optional<Course> courseOpt = Course.findById(entry.getKey());
+                if (courseOpt.isPresent()) {
+                    float avg = 0f;
+                    for (float g : entry.getValue()) {
+                        avg += g;
+                    }
+                    avg /= entry.getValue().size();
+                    report.put(courseOpt.get(), avg);
+                }
+            }
+
             return report;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -102,6 +115,7 @@ public class Student {
 
         return Collections.emptyMap();
     }
+
 
 
 
