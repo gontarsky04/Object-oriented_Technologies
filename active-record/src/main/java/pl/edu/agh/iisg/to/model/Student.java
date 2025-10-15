@@ -29,7 +29,6 @@ public class Student {
         String sql = "INSERT INTO student(first_name, last_name, index_number) VALUES (?, ?, ?)";
 
         // TODO
-        // it is important to maintain the correct order of the variables
         Object[] args = { firstName, lastName, indexNumber };
 
         try {
