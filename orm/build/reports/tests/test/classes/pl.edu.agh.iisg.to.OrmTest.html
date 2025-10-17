@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">6</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.334s</div>
+<div class="counter">1.401s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">40%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,123 +61,12 @@
 <div class="tab-container">
 <ul class="tabLinks">
 <li>
-<a href="#">Failed tests</a>
-</li>
-<li>
 <a href="#">Tests</a>
 </li>
 <li>
 <a href="#">Standard error</a>
 </li>
 </ul>
-<div class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="allStudentsCanBeListed()"></a>
-<h3 class="failures">allStudentsCanBeListed()</h3>
-<span class="code">
-<pre id="test-message-allStudentsCanBeListed()">org.opentest4j.AssertionFailedError: expected: &lt;3&gt; but was: &lt;0&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
-	at app//pl.edu.agh.iisg.to.OrmTest.allStudentsCanBeListed(OrmTest.java:75)
-	at java.base@25/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-</pre>
-<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="test-message-allStudentsCanBeListed()">Copy</button>
-</span>
-</div>
-<div class="test">
-<a name="courseConsistsOfEnrolledStudents()"></a>
-<h3 class="failures">courseConsistsOfEnrolledStudents()</h3>
-<span class="code">
-<pre id="test-message-courseConsistsOfEnrolledStudents()">org.opentest4j.AssertionFailedError: expected: &lt;2&gt; but was: &lt;0&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
-	at app//pl.edu.agh.iisg.to.OrmTest.courseConsistsOfEnrolledStudents(OrmTest.java:169)
-	at java.base@25/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-</pre>
-<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="test-message-courseConsistsOfEnrolledStudents()">Copy</button>
-</span>
-</div>
-<div class="test">
-<a name="courseReportCanBeObtained()"></a>
-<h3 class="failures">courseReportCanBeObtained()</h3>
-<span class="code">
-<pre id="test-message-courseReportCanBeObtained()">org.opentest4j.AssertionFailedError: expected: &lt;{Kasia Kowalska=[4.0, 5.0], Piotr Budynek=[3.0, 3.0, 5.0]}&gt; but was: &lt;{}&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at app//pl.edu.agh.iisg.to.OrmTest.courseReportCanBeObtained(OrmTest.java:232)
-	at java.base@25/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-</pre>
-<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="test-message-courseReportCanBeObtained()">Copy</button>
-</span>
-</div>
-<div class="test">
-<a name="studentCanBeEnrolledInCourseOnce()"></a>
-<h3 class="failures">studentCanBeEnrolledInCourseOnce()</h3>
-<span class="code">
-<pre id="test-message-studentCanBeEnrolledInCourseOnce()">java.util.NoSuchElementException: No value present
-	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
-	at pl.edu.agh.iisg.to.OrmTest.studentCanBeEnrolledInCourseOnce(OrmTest.java:136)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-</pre>
-<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="test-message-studentCanBeEnrolledInCourseOnce()">Copy</button>
-</span>
-</div>
-<div class="test">
-<a name="studentCanBeFoundByIndexNumber()"></a>
-<h3 class="failures">studentCanBeFoundByIndexNumber()</h3>
-<span class="code">
-<pre id="test-message-studentCanBeFoundByIndexNumber()">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at app//pl.edu.agh.iisg.to.OrmTest.checkStudent(OrmTest.java:264)
-	at app//pl.edu.agh.iisg.to.OrmTest.studentCanBeFoundByIndexNumber(OrmTest.java:89)
-	at java.base@25/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-</pre>
-<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="test-message-studentCanBeFoundByIndexNumber()">Copy</button>
-</span>
-</div>
-<div class="test">
-<a name="studentCanBeGraded()"></a>
-<h3 class="failures">studentCanBeGraded()</h3>
-<span class="code">
-<pre id="test-message-studentCanBeGraded()">java.util.NoSuchElementException: No value present
-	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
-	at pl.edu.agh.iisg.to.OrmTest.studentCanBeGraded(OrmTest.java:188)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-</pre>
-<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="test-message-studentCanBeGraded()">Copy</button>
-</span>
-</div>
-</div>
 <div class="tab">
 <h2>Tests</h2>
 <table>
@@ -189,53 +78,53 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">allStudentsCanBeListed()</td>
-<td class="failures">0.052s</td>
-<td class="failures">failed</td>
+<td class="success">allStudentsCanBeListed()</td>
+<td class="success">0.052s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">courseCanBeFoundById()</td>
-<td class="success">0.023s</td>
+<td class="success">0.021s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">courseConsistsOfEnrolledStudents()</td>
-<td class="failures">0.725s</td>
-<td class="failures">failed</td>
+<td class="success">courseConsistsOfEnrolledStudents()</td>
+<td class="success">0.090s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">courseReportCanBeObtained()</td>
-<td class="failures">0.053s</td>
-<td class="failures">failed</td>
+<td class="success">courseReportCanBeObtained()</td>
+<td class="success">0.135s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">courseWithUniqueNameCanBeCreated()</td>
-<td class="success">0.071s</td>
+<td class="success">0.059s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">studentCanBeEnrolledInCourseOnce()</td>
-<td class="failures">0.040s</td>
-<td class="failures">failed</td>
+<td class="success">studentCanBeEnrolledInCourseOnce()</td>
+<td class="success">0.050s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">studentCanBeFoundByIndexNumber()</td>
-<td class="failures">0.025s</td>
-<td class="failures">failed</td>
+<td class="success">studentCanBeFoundByIndexNumber()</td>
+<td class="success">0.027s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">studentCanBeGraded()</td>
-<td class="failures">0.241s</td>
-<td class="failures">failed</td>
+<td class="success">studentCanBeGraded()</td>
+<td class="success">0.822s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">studentCanBeRemovedFromSchool()</td>
-<td class="success">0.053s</td>
+<td class="success">0.085s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">studentWithUniqueIndexNumberCanBeCreated()</td>
-<td class="success">0.051s</td>
+<td class="success">0.060s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -398,7 +287,7 @@ org.hibernate.exception.GenericJDBCException: could not execute statement [[SQLI
 	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
 	at pl.edu.agh.iisg.to.session.SessionService.doAsTransaction(SessionService.java:43)
 	at pl.edu.agh.iisg.to.dao.GenericDao.save(GenericDao.java:27)
-	at pl.edu.agh.iisg.to.dao.StudentDao.create(StudentDao.java:18)
+	at pl.edu.agh.iisg.to.dao.StudentDao.create(StudentDao.java:21)
 	at pl.edu.agh.iisg.to.OrmTest.studentWithUniqueIndexNumberCanBeCreated(OrmTest.java:51)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
@@ -510,7 +399,7 @@ Caused by: org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_UNIQUE] A UNIQUE const
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.1.0</a> at 15 Oct 2025, 17:39:20</p>
+<a href="https://www.gradle.org">Gradle 9.1.0</a> at 17 Oct 2025, 19:28:33</p>
 </div>
 </div>
 </body>

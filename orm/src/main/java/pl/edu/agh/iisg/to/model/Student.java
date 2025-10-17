@@ -1,18 +1,21 @@
 package pl.edu.agh.iisg.to.model;
 
 import jakarta.persistence.*;
-
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+// informuje, że ta klasa jest encją, czyli powinna zostać zmapowana do bazy danych
 @Entity
+// określamy, jak w bazie danych powinna nazywać się tabela zawierająca rekordy zmapowane z tej klasy
 @Table(name = Student.TABLE_NAME)
 public class Student {
     public static final String TABLE_NAME = "student";
-
+    // Informujemy Hybernate, że ta zmienna jest kluczem głównym
     @Id
+    // Wartość tego pola powinna być generowana przez bazę danych
     @GeneratedValue(strategy = GenerationType.TABLE)
+    // pole id mapujemy na kolumnę w bazie danych, nazwa kolumny będzie wyciągnięta ze stałej Columns.ID
     @Column(name = Columns.ID)
     private int id;
 
@@ -25,6 +28,7 @@ public class Student {
     @Column(name = Columns.INDEX_NUMBER, nullable = false, unique = true)
     private int indexNumber;
 
+    // Relacja jeden do wielu (1:N) bo jeden student może mieć wiele ocen, ale ocena może mieć tylko jednego studenta
     @OneToMany(mappedBy = "student")
     private Set<Grade> gradeSet = new HashSet<>();
 

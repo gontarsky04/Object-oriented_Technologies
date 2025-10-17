@@ -1,85 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pl.edu.agh.iisg.to.OrmTest" tests="10" skipped="0" failures="6" errors="0" timestamp="2025-10-15T15:39:16.920Z" hostname="DESKTOP-AGMA3VP" time="3.438">
+<testsuite name="pl.edu.agh.iisg.to.OrmTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-10-17T17:28:30.484Z" hostname="DESKTOP-AGMA3VP" time="3.409">
   <properties/>
-  <testcase name="studentCanBeGraded()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.241">
-    <failure message="java.util.NoSuchElementException: No value present" type="java.util.NoSuchElementException">java.util.NoSuchElementException: No value present
-	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
-	at pl.edu.agh.iisg.to.OrmTest.studentCanBeGraded(OrmTest.java:188)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-</failure>
-  </testcase>
-  <testcase name="courseConsistsOfEnrolledStudents()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.725">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;2&gt; but was: &lt;0&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
-	at app//pl.edu.agh.iisg.to.OrmTest.courseConsistsOfEnrolledStudents(OrmTest.java:169)
-	at java.base@25/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-</failure>
-  </testcase>
-  <testcase name="studentCanBeRemovedFromSchool()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.053"/>
-  <testcase name="courseReportCanBeObtained()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.053">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;{Kasia Kowalska=[4.0, 5.0], Piotr Budynek=[3.0, 3.0, 5.0]}&gt; but was: &lt;{}&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;{Kasia Kowalska=[4.0, 5.0], Piotr Budynek=[3.0, 3.0, 5.0]}&gt; but was: &lt;{}&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at app//pl.edu.agh.iisg.to.OrmTest.courseReportCanBeObtained(OrmTest.java:232)
-	at java.base@25/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-</failure>
-  </testcase>
-  <testcase name="studentCanBeEnrolledInCourseOnce()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.04">
-    <failure message="java.util.NoSuchElementException: No value present" type="java.util.NoSuchElementException">java.util.NoSuchElementException: No value present
-	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
-	at pl.edu.agh.iisg.to.OrmTest.studentCanBeEnrolledInCourseOnce(OrmTest.java:136)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-</failure>
-  </testcase>
-  <testcase name="allStudentsCanBeListed()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.052">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;3&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;3&gt; but was: &lt;0&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
-	at app//pl.edu.agh.iisg.to.OrmTest.allStudentsCanBeListed(OrmTest.java:75)
-	at java.base@25/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-</failure>
-  </testcase>
-  <testcase name="courseWithUniqueNameCanBeCreated()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.071"/>
-  <testcase name="studentWithUniqueIndexNumberCanBeCreated()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.051"/>
-  <testcase name="studentCanBeFoundByIndexNumber()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.025">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at app//pl.edu.agh.iisg.to.OrmTest.checkStudent(OrmTest.java:264)
-	at app//pl.edu.agh.iisg.to.OrmTest.studentCanBeFoundByIndexNumber(OrmTest.java:89)
-	at java.base@25/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base@25/java.util.ArrayList.forEach(ArrayList.java:1604)
-</failure>
-  </testcase>
-  <testcase name="courseCanBeFoundById()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.023"/>
+  <testcase name="studentCanBeGraded()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.822"/>
+  <testcase name="courseConsistsOfEnrolledStudents()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.09"/>
+  <testcase name="studentCanBeRemovedFromSchool()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.085"/>
+  <testcase name="courseReportCanBeObtained()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.135"/>
+  <testcase name="studentCanBeEnrolledInCourseOnce()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.05"/>
+  <testcase name="allStudentsCanBeListed()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.052"/>
+  <testcase name="courseWithUniqueNameCanBeCreated()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.059"/>
+  <testcase name="studentWithUniqueIndexNumberCanBeCreated()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.06"/>
+  <testcase name="studentCanBeFoundByIndexNumber()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.027"/>
+  <testcase name="courseCanBeFoundById()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.021"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.jboss.logging).
 log4j:WARN Please initialize the log4j system properly.
@@ -236,7 +167,7 @@ org.hibernate.exception.GenericJDBCException: could not execute statement [[SQLI
 	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
 	at pl.edu.agh.iisg.to.session.SessionService.doAsTransaction(SessionService.java:43)
 	at pl.edu.agh.iisg.to.dao.GenericDao.save(GenericDao.java:27)
-	at pl.edu.agh.iisg.to.dao.StudentDao.create(StudentDao.java:18)
+	at pl.edu.agh.iisg.to.dao.StudentDao.create(StudentDao.java:21)
 	at pl.edu.agh.iisg.to.OrmTest.studentWithUniqueIndexNumberCanBeCreated(OrmTest.java:51)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
